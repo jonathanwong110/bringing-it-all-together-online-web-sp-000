@@ -60,7 +60,7 @@ class Dog
       row = dog[0]
       dog = Dog.new(row[0], row[1], row[2])
     else
-      dog = self.create(name: name, breed: breed)
+      dog = self.create(:name name, :breed breed)
     end
     dog
   end
